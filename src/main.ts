@@ -10,3 +10,9 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+  // same function but in JQuery
+  // catch(function(err) {
+  //   console.error(err);
+  // });
