@@ -6,28 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  heroes = [
-    'Superman',
-    'Wonderwoman',
-    'Prettywoman',
-  ];
+
 
   name = '';
   heroToAdd = '';
 
-  addHero() {
-    // this.heroes.push(this.heroToAdd);
-    if (this.heroToAdd.trim().length > 0) { 
-      this.heroes.push(this.heroToAdd.trim());
-      this.heroToAdd = '';
-     
-    }else{
-        alert('le nom de Heroes ne doit pas restée vide');
-        }
 
-    // if (this.heroToAdd.trim() == heroToAdd) { 
+    // if (this.heroToAdd.trim() == heroToAdd) {
     //   this.heroes.pull(this.heroToAdd.trim());
-     
+
     // }else{
     //     alert('le nom de Heroes déjà existe');
     //     }
@@ -37,7 +24,7 @@ export class AppComponent {
       // alors heroToAdd.trim() = ''.
 
 
-  };
+  }
 
 
 
@@ -55,5 +42,5 @@ export class AppComponent {
       // < /script>
 
 
-}
+
 

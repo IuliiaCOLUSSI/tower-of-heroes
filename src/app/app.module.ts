@@ -4,14 +4,28 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
+import { HeroEditComponent } from './hero-edit/hero-edit.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroesListComponent,
+    HeroDetailsComponent,
+    HeroEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false
+      }
+    ),
     FormsModule
   ],
   providers: [],

@@ -15,4 +15,4 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   // same function but in JQuery
   // catch(function(err) {
   //   console.error(err);
-  // });
+  // })
